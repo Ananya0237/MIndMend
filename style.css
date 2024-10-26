@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Chakra+Petch:ital,wght@');
+
+body {
+    font-family: 'Abel', sans-serif; /* Use imported font */
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box {
+    height: 400px;
+    padding: 10px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
+    flex-grow: 1; /* Allows chat-box to grow */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.user-message {
+    text-align: right;
+    margin: 10px 0;
+    color: #8FBC8B;
+}
+
+.bot-message {
+    text-align: left;
+    margin: 10px 0;
+    padding: 10px; /* Padding for a better look */
+    background-color: #e7f3fe; /* Background for bot messages */
+    border-radius: 5px; /* Smooth corners */
+    color: #568203;
+}
+
+input[type="text"] {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+    border-radius: 5px 0 0 5px; /* Rounded left corners */
+}
+
+.fixed {
+  position:fixed;
+  bottom:0px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0; /* Rounded right corners */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#send-button {
+    background-color: #8FBC8B;
+    border-radius: 5px;
+}
+
+#send-button:hover {
+    background-color: #24468a;
+}
+
+/* Dog images */
+.dog-container {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin: -20px 0 10px; /* Pulls dogs above the input area */
+}
+
+.dog {
+    width: 50px; /* Set width for the dog images */
+    margin: 0 5px;
+    animation: wag 1s infinite alternate; /* Wagging animation */
+}
+
+@keyframes wag {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+#dogImg{
+    width:30px;
+    height:30px;
+}
+.container {
+    text-align: center;
+}
